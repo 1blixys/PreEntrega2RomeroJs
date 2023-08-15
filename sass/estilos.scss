@@ -1,0 +1,222 @@
+
+@import "generales";
+@import"titulo";
+
+
+
+
+/* Estilos Nav Bar */
+.navbar {
+    --bs-navbar-padding-x: none;
+    --bs-navbar-padding-y: none;
+}
+nav{
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+
+.boton__nav{
+    background-color: 	#FFFF00;
+}
+
+.boton__color {
+    background-color:white;
+    padding: 5px;
+    margin: 15px;
+}
+
+a{
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.imageninicio{
+display: flex;
+flex-direction: column;
+margin:20px 60px 60px 60px;
+}
+
+
+
+/* IMG */
+.imagenesportada{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+img.grande{
+    width: 250px;
+    height: 250px;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+img.grande:hover{
+    transform: scale(1.15);
+    transition-property: all;
+    transition-duration: 0.35s;
+}
+
+
+
+/* Textos */
+p{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 19px;
+    padding: 15px;
+    color: rgb(21, 20, 34);
+}
+
+
+/* Menu Section */
+
+.imagenesmenu{
+    padding: 30px;
+    margin: 2px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.linkcarta{
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin-top: 10px;
+    color: aliceblue;
+}
+
+
+/* Footer */
+
+footer{
+    background-color: 	#FFFF00;
+    margin-top: 25px;
+    padding: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.iconosdos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* grids */
+
+header{
+    grid-area: header;
+}
+
+nav{
+    grid-area: nav;
+}
+
+.imagenesmenu{
+    grid-area: imgmenu;
+}
+
+footer{
+    grid-area:footer;
+}
+
+@media (min-width: 500px){
+    .imagenesmenu{
+        padding: 0%;
+        display: grid;
+        gap: 0px;
+        justify-items: center;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "header     header"
+        "nav        nav"
+        "imgmenu   imgmenu"
+        "footer     footer";
+    }
+}
+
+@media (min-width:768px){
+    .imagenesmenu{
+        margin-top: 25px;
+        padding: 0%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 0px;
+        justify-items: center;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "header     header      header"
+        "nav        nav         nav"
+        "imgmenu   imgmenu     imgmenu"
+        "footer     footer      footer";
+    }
+
+    footer{
+        margin-top: 125px;
+    }
+}
+
+@media (min-width:1024px){
+    .imagenesmenu{
+        margin-top: 25px;
+        padding: 0%;
+        display: grid;
+        gap: 0px;
+        justify-items: center;
+        justify-content: center;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-areas:
+        "header     header      header     header"
+        "nav        nav         nav        nav"
+        "imgmenu   imgmenu     imgmenu     imgmenu"
+        "footer     footer      footer     footer";
+    }
+    img.grande{
+        width: 290px;
+        height: 290px;
+        padding: 15px;
+        border-radius: 30px;
+    }
+}
+
+/* Formulario de contacto */
+
+.container{
+    display: flex;
+    justify-content: center;
+    
+}
+.header {
+    color:aliceblue;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+
+/* Ubicacion Google Maps */
+.mapouter{
+    display: flex;
+    padding: 50px;
+}
+
+/* Historia */
+
+.txthistoria{
+    display: flex;
+    margin: 70px;
+    background-color: 	#FFFF00;
+    flex-direction: column;
+    
+}
